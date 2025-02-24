@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Building2,  Users, Phone, Mail, MapPin,  Star, Award,HeadphonesIcon, Clock,FileText, Handshake, Building, Facebook,Home,Shield,Linkedin, MessageCircle} from 'lucide-react';
-
+import { Building2, Users, Phone, Mail, MapPin, Star, Award, HeadphonesIcon, Clock, FileText, Handshake, Building, Facebook, Home, Shield, Linkedin, MessageCircle } from 'lucide-react';
+import logo from '../src/l.png'
+import s from '../S.png'
 function App() {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -57,88 +58,88 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-{/* Header */}
-{/* Top Contact Bar */}
-<div className="bg-blue-50 py-2 border-b border-blue-100"> {/* Light blue background */}
-  <div className="container mx-auto px-6 flex justify-between items-center">
-    {/* Left Side - Contact Info */}
-    <div className="flex items-center space-x-6"> {/* Adjusted for single line */}
-      {/* Contact-info Heading with HeadphonesIcon */}
-      <div className="flex items-center space-x-2">
-        <HeadphonesIcon className="w-5 h-5 text-blue-600" /> {/* Headphones icon */}
-        <span className="text-sm font-semibold text-gray-700">Contact-info</span> {/* Heading */}
-      </div>
+      {/* Header */}
+      {/* Top Contact Bar */}
+      <div className="bg-blue-50 py-2 border-b border-blue-100"> {/* Light blue background */}
+        <div className="container mx-auto px-6 flex justify-between items-center">
+          {/* Left Side - Contact Info */}
+          <div className="flex items-center space-x-6"> {/* Adjusted for single line */}
+            {/* Contact-info Heading with HeadphonesIcon */}
+            <div className="flex items-center space-x-2">
+              <HeadphonesIcon className="w-5 h-5 text-blue-600" /> {/* Headphones icon */}
+              <span className="text-sm font-semibold text-gray-700">Contact-info</span> {/* Heading */}
+            </div>
 
-      {/* Contact Details */}
-      <div className="flex space-x-6 text-sm text-gray-700"> {/* Adjusted font color */}
-        <a href="tel:+91-9870158383" className="flex items-center hover:text-blue-600 transition-colors">
-          <Phone className="w-4 h-4 mr-2" /> +91-9870158383
-        </a>
-        <a href="mailto:arvatrealty1@gmail.com" className="flex items-center hover:text-blue-600 transition-colors">
-          <Mail className="w-4 h-4 mr-2" /> arvatrealty1@gmail.com
-        </a>
-      </div>
-    </div>
+            {/* Contact Details */}
+            <div className="flex space-x-6 text-sm text-gray-700"> {/* Adjusted font color */}
+              <a href="tel:+91-9870158383" className="flex items-center hover:text-blue-600 transition-colors">
+                <Phone className="w-4 h-4 mr-2" /> +91-9870158383
+              </a>
+              <a href="mailto:arvatrealty1@gmail.com" className="flex items-center hover:text-blue-600 transition-colors">
+                <Mail className="w-4 h-4 mr-2" /> arvatrealty1@gmail.com
+              </a>
+            </div>
+          </div>
 
-    {/* Right Side - WhatsApp and Social Media (Placeholders) */}
-    <div className="flex space-x-4">
-      <a href="https://wa.me/919870158383" className="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
-        <MessageCircle className="w-4 h-4 mr-2" />
-      </a>
-      <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">
-        <Linkedin className="w-4 h-4" /> {/* Placeholder for LinkedIn */}
-      </a>
-      <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">
-        <Facebook className="w-4 h-4" /> {/* Placeholder for Facebook */}
-      </a>
-    </div>
-  </div>
-</div>
+          {/* Right Side - WhatsApp and Social Media (Placeholders) */}
+          <div className="flex space-x-4">
+            <a href="https://wa.me/919870158383" className="flex items-center text-gray-700 hover:text-blue-600 transition-colors">
+              <MessageCircle className="w-4 h-4 mr-2" />
+            </a>
+            <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Linkedin className="w-4 h-4" /> {/* Placeholder for LinkedIn */}
+            </a>
+            <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Facebook className="w-4 h-4" /> {/* Placeholder for Facebook */}
+            </a>
+          </div>
+        </div>
+      </div>
       <header className={`w-full ${isHeaderFixed ? 'fixed top-0 bg-white shadow-lg animate-slideDown' : ''} z-50`}>
-  <div className="container mx-auto px-6">
-    <div className="flex items-center justify-between py-4">
-      {/* Replace the text with the logo */}
-      <a href="#home" className='flex items-center space-x-2'>
-        <img 
-          src="/l.png" // Path to your logo file in the `public` folder
-          alt="Arvat Realty Logo" 
-          className="h-12" // Adjust height as needed
-        />         
-        <span className="text-xl font-bold text-gray-800">Arvat Realty</span> {/* Text inline with logo */}
-      </a>
-      <nav className="hidden md:flex space-x-8">
-        <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
-        <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-        <a href="#properties" className="text-gray-600 hover:text-blue-600 transition-colors">Properties</a>
-        <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
-        <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
-      </nav>
-    </div>
-  </div>
-</header>
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-between py-4">
+            {/* Replace the text with the logo */}
+            <a href="#home" className='flex items-center space-x-2'>
+              <img
+                src={logo} // Path to your logo file in the `public` folder
+                alt="Arvat Realty Logo"
+                className="h-12" // Adjust height as needed
+              />
+              <span className="text-xl font-bold text-gray-800">Arvat Realty</span> {/* Text inline with logo */}
+            </a>
+            <nav className="hidden md:flex space-x-8">
+              <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+              <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+              <a href="#properties" className="text-gray-600 hover:text-blue-600 transition-colors">Properties</a>
+              <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
+              <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-{/* Hero Section */}
-<div 
-  className="relative h-screen bg-cover bg-center"
-  style={{
-    backgroundImage: 'url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80")',
-  }}
->
-  <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50">
-    <div className="container mx-auto px-6 h-full flex items-center justify-center">
-      <div className="max-w-3xl text-center">
-        <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
-          Your Trusted Partner in Premium Real Estate Solutions
-        </h1>
-        <p className="text-xl text-white/90 mb-8">
-          Premium real estate solutions tailored to your aspirations
-        </p>
+      {/* Hero Section */}
+      <div
+        className="relative h-screen bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80")',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50">
+          <div className="container mx-auto px-6 h-full flex items-center justify-center">
+            <div className="max-w-3xl text-center">
+              <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
+                Your Trusted Partner in Premium Real Estate Solutions
+              </h1>
+              <p className="text-xl text-white/90 mb-8">
+                Premium real estate solutions tailored to your aspirations
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-{/* About Us Section 
+      {/* About Us Section 
 <section className="py-20 bg-white"id="about">
   <div className="container mx-auto px-6">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -171,101 +172,101 @@ function App() {
   </div>
 </section>  */}
 
-{/* About Us Section */}
-<section className="py-20 bg-white" id="about">
-  <div className="container mx-auto px-6">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-{/* Photo on the Left */}
-<div className="flex justify-center md:justify-start">
-  <img
-    src="/S.png" // Path to your image in the `src` folder
-    alt="About Us"
-    className="w-full max-w-md rounded-lg shadow-lg" // Larger size for better fit
-  />
-</div>
+      {/* About Us Section */}
+      <section className="py-20 bg-white" id="about">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Photo on the Left */}
+            <div className="flex justify-center md:justify-start">
+              <img
+                src={s}// Path to your image in the `src` folder
+                alt="About Us"
+                className="w-full max-w-md rounded-lg shadow-lg" // Larger size for better fit
+              />
+            </div>
 
-      {/* Content on the Right */}
-      <div className="max-w-2xl">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8">About Us</h2>
-        <p className="text-gray-600 mb-6">
-          Welcome to <strong>Arvat Realty & Consultants</strong>, a trusted name in real estate consultancy and liaison services. With over <strong>10 years of experience</strong>, we specialize in providing comprehensive solutions tailored to meet the unique needs of our clients. Our expertise spans across key sectors such as <strong>Real Estate, Solar, Infrastructure, and Aviation</strong>.
-        </p>
-        <p className="text-gray-600 mb-6">
-          Founded by <strong>Ravinder Kumar</strong>, our company has established a strong reputation for delivering strategic real estate solutions. Over the past <strong>10 years</strong>, we have honed our expertise in the Indian  markets, offering services such as <strong>land acquisition, joint ventures, leasing, construction, and interior development</strong> for residential, commercial, and office spaces.
-        </p>
-        <p className="text-gray-600 mb-6">
-          At Arvat Realty, we pride ourselves on our ability to coordinate with various government authorities, to secure necessary approvals and licenses for projects such as <strong>Townships, Group Housing, Commercial Developments, and Change of Land Use (CLU)</strong>.
-        </p>
-        <p className="text-gray-600 mb-6">
-        Committed to integrity, professionalism, and client satisfaction, Arvat Realty & Consultants is your reliable partner in <strong>navigating the complexities </strong> of real estate, delivering results that align with your vision.
-        </p>
-        <p className = "text-gray-600 mb-6">
-        Our mission is to align real estate strategies with our clients' business goals, delivering <strong>maximum value</strong> through professionalism, transparency, and integrity. Whether you're looking to buy, sell, or develop property, Arvat Realty & Consultants is your trusted partner for all your real estate needs.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+            {/* Content on the Right */}
+            <div className="max-w-2xl">
+              <h2 className="text-3xl font-bold text-gray-800 mb-8">About Us</h2>
+              <p className="text-gray-600 mb-6">
+                Welcome to <strong>Arvat Realty & Consultants</strong>, a trusted name in real estate consultancy and liaison services. With over <strong>10 years of experience</strong>, we specialize in providing comprehensive solutions tailored to meet the unique needs of our clients. Our expertise spans across key sectors such as <strong>Real Estate, Solar, Infrastructure, and Aviation</strong>.
+              </p>
+              <p className="text-gray-600 mb-6">
+                Founded by <strong>Ravinder Kumar</strong>, our company has established a strong reputation for delivering strategic real estate solutions. Over the past <strong>10 years</strong>, we have honed our expertise in the Indian  markets, offering services such as <strong>land acquisition, joint ventures, leasing, construction, and interior development</strong> for residential, commercial, and office spaces.
+              </p>
+              <p className="text-gray-600 mb-6">
+                At Arvat Realty, we pride ourselves on our ability to coordinate with various government authorities, to secure necessary approvals and licenses for projects such as <strong>Townships, Group Housing, Commercial Developments, and Change of Land Use (CLU)</strong>.
+              </p>
+              <p className="text-gray-600 mb-6">
+                Committed to integrity, professionalism, and client satisfaction, Arvat Realty & Consultants is your reliable partner in <strong>navigating the complexities </strong> of real estate, delivering results that align with your vision.
+              </p>
+              <p className="text-gray-600 mb-6">
+                Our mission is to align real estate strategies with our clients' business goals, delivering <strong>maximum value</strong> through professionalism, transparency, and integrity. Whether you're looking to buy, sell, or develop property, Arvat Realty & Consultants is your trusted partner for all your real estate needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-{/* Stats Section */}
-<section className="py-16 bg-white w-full">
-  <div className="container mx-auto px-6">
-    {/* Heading */}
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-      Arvat at a Glance
-    </h2>
+      {/* Stats Section */}
+      <section className="py-16 bg-white w-full">
+        <div className="container mx-auto px-6">
+          {/* Heading */}
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Arvat at a Glance
+          </h2>
 
-    {/* Stats Grid - Full Width Single Line */}
-    <div className="flex justify-between items-center w-full">
-      <StatCard number="10+" text="Years Experience" icon={<Clock className="w-10 h-10" />} />
-      <StatCard number="500+" text="Properties Managed" icon={<Building className="w-10 h-10" />} />
-      <StatCard number="1000+" text="Happy Clients" icon={<Users className="w-10 h-10" />} />
-      <StatCard number="50+" text="Awards Won" icon={<Award className="w-10 h-10" />} />
-      <StatCard number="100+" text="Strategic Partnerships" icon={<Handshake className="w-10 h-10" />} />
-    </div>
-  </div>
-</section>
+          {/* Stats Grid - Full Width Single Line */}
+          <div className="flex justify-between items-center w-full">
+            <StatCard number="10+" text="Years Experience" icon={<Clock className="w-10 h-10" />} />
+            <StatCard number="500+" text="Properties Managed" icon={<Building className="w-10 h-10" />} />
+            <StatCard number="1000+" text="Happy Clients" icon={<Users className="w-10 h-10" />} />
+            <StatCard number="50+" text="Awards Won" icon={<Award className="w-10 h-10" />} />
+            <StatCard number="100+" text="Strategic Partnerships" icon={<Handshake className="w-10 h-10" />} />
+          </div>
+        </div>
+      </section>
 
 
 
-{/* Operating Areas Section */}
-<section className="py-20 bg-white">
-  <div className="container mx-auto px-6">
-    <h2 className="text-3xl font-bold text-center mb-12">Areas in which we Operate</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-      <OperatingAreaCard
-        image="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        area="Delhi NCR"
-        description="Comprehensive real estate services across the National Capital Region"
-      />
-      <OperatingAreaCard
-        image="https://images.unsplash.com/photo-1623492701902-47dc207df5dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        area="Rajasthan"
-        description="Expert property solutions throughout major cities of UP"
-      />
-      <OperatingAreaCard
-        image="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        area="Haryana"
-        description="Complete real estate solutions across major districts"
-      />
+      {/* Operating Areas Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">Areas in which we Operate</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             <OperatingAreaCard
-        image="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        area="Punjab"
-        description="Comprehensive property services across major cities"
-      />
-      <OperatingAreaCard
-        image="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        area="Himachal Pradesh"
-        description="Premium property services in scenic locations"
-      />
-      <OperatingAreaCard
-        image="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-        area="Pune & Mumbai"
-        description="Strategic real estate solutions in Pune metropolitan area"
-      />
-    </div>
-  </div>
-</section>
+              image="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              area="Delhi NCR"
+              description="Comprehensive real estate services across the National Capital Region"
+            />
+            <OperatingAreaCard
+              image="https://images.unsplash.com/photo-1623492701902-47dc207df5dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              area="Rajasthan"
+              description="Expert property solutions throughout major cities of UP"
+            />
+            <OperatingAreaCard
+              image="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              area="Haryana"
+              description="Complete real estate solutions across major districts"
+            />
+            <OperatingAreaCard
+              image="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              area="Punjab"
+              description="Comprehensive property services across major cities"
+            />
+            <OperatingAreaCard
+              image="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              area="Himachal Pradesh"
+              description="Premium property services in scenic locations"
+            />
+            <OperatingAreaCard
+              image="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              area="Pune & Mumbai"
+              description="Strategic real estate solutions in Pune metropolitan area"
+            />
+          </div>
+        </div>
+      </section>
 
 
       {/* Signature Estates */}
@@ -314,48 +315,48 @@ function App() {
       </section>
 
       {/* Services Section */}
-<section className="py-20" id="services">
-  <div className="container mx-auto px-6">
-    <h2 className="text-3xl font-bold text-center mb-12">Our Premium Services</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <ServiceCard
-        icon={<Building2 className="w-8 h-8" />}
-        title="Property Management"
-        description="Our comprehensive property management services ensure seamless operations for both residential and commercial properties. From tenant screening and lease management to maintenance and financial reporting, we handle every aspect with precision and professionalism. Our goal is to maximize your property's value while minimizing your workload."
-      />
-      <ServiceCard
-        icon={<Users className="w-8 h-8" />}
-        title="Investment Advisory"
-        description="Leverage our expertise in real estate investment to make informed decisions that align with your financial goals. We provide tailored advisory services, including market analysis, risk assessment, and portfolio optimization. Whether you're a first-time investor or a seasoned professional, we help you identify lucrative opportunities and achieve long-term growth."
-      />
-      <ServiceCard
-        icon={<Shield className="w-8 h-8" />}
-        title="Legal Consultancy"
-        description="Navigating the legal complexities of real estate transactions can be daunting. Our team of experienced legal professionals offers end-to-end assistance, including contract drafting, due diligence, title verification, and dispute resolution. We ensure that every transaction is legally sound, transparent, and in your best interest."
-      />
-      <ServiceCard
-        icon={<Handshake className="w-8 h-8" />}
-        title="Joint Ventures & Collaborations"
-        description="We specialize in facilitating joint ventures and collaborations in the real estate sector. Whether you're looking to partner with developers or investors, we provide strategic guidance, negotiation support, and legal structuring to ensure successful partnerships that drive mutual growth and profitability."
-      />
-      {/*  <ServiceCard
+      <section className="py-20" id="services">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Premium Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ServiceCard
+              icon={<Building2 className="w-8 h-8" />}
+              title="Property Management"
+              description="Our comprehensive property management services ensure seamless operations for both residential and commercial properties. From tenant screening and lease management to maintenance and financial reporting, we handle every aspect with precision and professionalism. Our goal is to maximize your property's value while minimizing your workload."
+            />
+            <ServiceCard
+              icon={<Users className="w-8 h-8" />}
+              title="Investment Advisory"
+              description="Leverage our expertise in real estate investment to make informed decisions that align with your financial goals. We provide tailored advisory services, including market analysis, risk assessment, and portfolio optimization. Whether you're a first-time investor or a seasoned professional, we help you identify lucrative opportunities and achieve long-term growth."
+            />
+            <ServiceCard
+              icon={<Shield className="w-8 h-8" />}
+              title="Legal Consultancy"
+              description="Navigating the legal complexities of real estate transactions can be daunting. Our team of experienced legal professionals offers end-to-end assistance, including contract drafting, due diligence, title verification, and dispute resolution. We ensure that every transaction is legally sound, transparent, and in your best interest."
+            />
+            <ServiceCard
+              icon={<Handshake className="w-8 h-8" />}
+              title="Joint Ventures & Collaborations"
+              description="We specialize in facilitating joint ventures and collaborations in the real estate sector. Whether you're looking to partner with developers or investors, we provide strategic guidance, negotiation support, and legal structuring to ensure successful partnerships that drive mutual growth and profitability."
+            />
+            {/*  <ServiceCard
         icon={<MapPin className="w-8 h-8" />}
         title="Land Acquisition & Development"
         description="Our expertise in land acquisition and development ensures that you secure the best parcels of land for your projects. We assist in identifying prime locations, negotiating deals, and obtaining necessary approvals from authorities like HUDA, DDA, and Town & Country Planning. From raw land to developed plots, we guide you through every step."
       />  */}
-      <ServiceCard
-        icon={<Home className="w-8 h-8" />}
-        title="Interior Design & Construction"
-        description="Transform your raw flats, houses, or commercial spaces into stunning, functional environments with our interior design and construction services. We offer end-to-end solutions, from conceptualization to execution, ensuring that every detail aligns with your vision and requirements."
-      />
-      <ServiceCard
-        icon={<FileText className="w-8 h-8" />}
-        title="Liaisoning & Approvals"
-        description="Navigating the bureaucratic landscape of real estate approvals can be challenging. Our team specializes in liaising with government authorities like HUDA, DDA, MCD, and Town & Country Planning to secure licenses, LOIs, and other necessary approvals for your projects. We streamline the process, saving you time and effort."
-      />
-    </div>
-  </div>
-</section>
+            <ServiceCard
+              icon={<Home className="w-8 h-8" />}
+              title="Interior Design & Construction"
+              description="Transform your raw flats, houses, or commercial spaces into stunning, functional environments with our interior design and construction services. We offer end-to-end solutions, from conceptualization to execution, ensuring that every detail aligns with your vision and requirements."
+            />
+            <ServiceCard
+              icon={<FileText className="w-8 h-8" />}
+              title="Liaisoning & Approvals"
+              description="Navigating the bureaucratic landscape of real estate approvals can be challenging. Our team specializes in liaising with government authorities like HUDA, DDA, MCD, and Town & Country Planning to secure licenses, LOIs, and other necessary approvals for your projects. We streamline the process, saving you time and effort."
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Testimonials */}
       <section className="py-20 bg-gray-50">
@@ -397,7 +398,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20" id = "contact">
+      <section className="py-20" id="contact">
         <div className="container mx-auto px-6">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
@@ -480,15 +481,14 @@ function App() {
                   <button
                     type="submit"
                     disabled={formStatus === 'sending'}
-                    className={`w-full px-6 py-3 rounded-lg text-white transition-colors ${
-                      formStatus === 'sending' 
-                        ? 'bg-blue-400 cursor-not-allowed' 
-                        : 'bg-blue-600 hover:bg-blue-700'
-                    }`}
+                    className={`w-full px-6 py-3 rounded-lg text-white transition-colors ${formStatus === 'sending'
+                      ? 'bg-blue-400 cursor-not-allowed'
+                      : 'bg-blue-600 hover:bg-blue-700'
+                      }`}
                   >
                     {formStatus === 'sending' ? 'Sending...' : 'Send Message'}
                   </button>
-                  
+
                   {/* Form Status Messages */}
                   {formStatus === 'success' && (
                     <div className="p-4 bg-green-100 text-green-700 rounded-lg">
