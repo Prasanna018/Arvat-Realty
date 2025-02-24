@@ -57,11 +57,11 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen w-full bg-white">
       {/* Header */}
       {/* Top Contact Bar */}
-      <div className="bg-blue-50 py-2 border-b border-blue-100"> {/* Light blue background */}
-        <div className="container mx-auto px-6 flex justify-between items-center">
+      <div className="bg-blue-50  py-2 border-b border-blue-100"> {/* Light blue background */}
+        <div className="container mx-auto px-6 flex flex-col space-y-4 justify-between items-center">
           {/* Left Side - Contact Info */}
           <div className="flex items-center space-x-6"> {/* Adjusted for single line */}
             {/* Contact-info Heading with HeadphonesIcon */}
@@ -217,7 +217,7 @@ function App() {
           </h2>
 
           {/* Stats Grid - Full Width Single Line */}
-          <div className="flex justify-between items-center w-full">
+          <div className="lg:flex grid grid-cols-2 justify-between items-center w-full">
             <StatCard number="10+" text="Years Experience" icon={<Clock className="w-10 h-10" />} />
             <StatCard number="500+" text="Properties Managed" icon={<Building className="w-10 h-10" />} />
             <StatCard number="1000+" text="Happy Clients" icon={<Users className="w-10 h-10" />} />
