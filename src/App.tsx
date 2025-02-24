@@ -61,7 +61,7 @@ function App() {
       {/* Header */}
       {/* Top Contact Bar */}
       <div className="bg-blue-50  py-2 border-b border-blue-100"> {/* Light blue background */}
-        <div className="container mx-auto px-6 flex flex-col space-y-4 justify-between items-center">
+        <div className=" mx-auto px-6 flex lg:flex-row flex-col space-y-4 justify-between items-center">
           {/* Left Side - Contact Info */}
           <div className="flex items-center space-x-6"> {/* Adjusted for single line */}
             {/* Contact-info Heading with HeadphonesIcon */}
