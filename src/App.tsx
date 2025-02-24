@@ -65,13 +65,13 @@ function App() {
           {/* Left Side - Contact Info */}
           <div className="flex items-center space-x-6"> {/* Adjusted for single line */}
             {/* Contact-info Heading with HeadphonesIcon */}
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-col md:flex-row items-center space-x-2">
               <HeadphonesIcon className="w-5 h-5 text-blue-600" /> {/* Headphones icon */}
               <span className="text-sm font-semibold text-gray-700">Contact-info</span> {/* Heading */}
             </div>
 
             {/* Contact Details */}
-            <div className="flex space-x-6 text-sm text-gray-700"> {/* Adjusted font color */}
+            <div className="flex flex-col md:flex-row items-center space-x-6 text-sm text-gray-700"> {/* Adjusted font color */}
               <a href="tel:+91-9870158383" className="flex items-center hover:text-blue-600 transition-colors">
                 <Phone className="w-4 h-4 mr-2" /> +91-9870158383
               </a>
